@@ -1,2 +1,28 @@
-<p>docuter works!</p>
-{{docterList |json}}
+
+<h1 style="text-emphasis-color: blue; text-align: center">
+  Specialization List
+</h1>
+
+<div class="container">
+  <div class="card-group">
+    <div *ngFor="let s of docterList">
+      <div class="card">
+        <img src={{s.image}} class="card-img-top" alt="Acs" />
+        <div class="card-body">
+          <h5 class="card-title">{{s.price}}</h5>
+          <p class="card-text">
+           {{s.description}}
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">{{dd}}</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<a class="btn btn-primary" aria-disabled="true">Primary link</a>
+<a class="btn btn-secondary" aria-disabled="true">Link</a>
+
+<a href="/specilization/edit" class="btn btn-primary btn-lg active" role="button" aria-pressed="false">Primary link</a>
+<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="false">Link</a>

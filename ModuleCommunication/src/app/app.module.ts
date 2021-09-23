@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { MastercomponentComponent } from './Products/mastercomponent/mastercomponent.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DocuterComponent } from './DocModule/docuter/docuter.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,9 @@ import { DocuterComponent } from './DocModule/docuter/docuter.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpClientModule
+    ,
     RouterModule.forRoot([
       {
         path:"list", loadChildren:()=>import("./Products/listdoc.module").then(m=>m.ListdocModule)

@@ -9,4 +9,5 @@ interface Product {
 
   note: String;
 }
+
 export default Product;

@@ -1,0 +1,49 @@
+<h1 style="text-emphasis-color: blue; text-align: center">
+  Specialization List
+</h1>
+<img alt="xxx" class="btn btn-info" src="https://angular7ambatch.s3.us-east-2.amazonaws.com/AC1.jfif" alt="AC1">
+
+<div class="container">
+  <div class="row">
+    <div class="col-1">
+      <label>Id</label>
+    </div>
+    <div class="col-2">
+      <label>Code</label>
+    </div>
+    <div class="col-3">
+      <label>Name</label>
+    </div>
+    <div class="col-3">
+      <label>Note</label>
+    </div>
+    <div class="col-1">
+      <label class="btn btn-info">Edit</label>
+    </div>
+    <div class="col-1">
+      <label class="btn btn-danger">Delete</label>
+    </div>
+  </div>
+  <div *ngFor="let s of specList">
+    <div class="row">
+      <div class="col-1">
+        <label>{{s.id}}</label>
+      </div>
+      <div class="col-2">
+        <label>{{s.code}}</label>
+      </div>
+      <div class="col-3">
+        <label>{{s.name}}</label>
+      </div>
+      <div class="col-3">
+        <label>{{s.note}}</label>
+      </div>
+      <div class="col-1">
+        <label class="btn btn-info" >Edit</label>
+      </div>
+      <div class="col-1">
+        <label class="btn btn-danger">Delete</label>
+      </div>
+    </div>
+  </div>
+</div>

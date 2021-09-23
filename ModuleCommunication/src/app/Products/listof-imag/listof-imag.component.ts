@@ -12,7 +12,7 @@ export class ListofImagComponent {
   vmsList:Array<any> = [];
     constructor(private service:productService){}
     ngOnInit(){
-        this.service.getProducts().subscribe((posRes)=>{
+        this.service.getAcProducts().subscribe((posRes)=>{
             this.vmsList = posRes;
         },(errRes:HttpErrorResponse)=>{
             console.log(errRes);

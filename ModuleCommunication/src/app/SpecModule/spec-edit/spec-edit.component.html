@@ -1,0 +1,42 @@
+<p>spec-edit works!</p>
+<h1 style="text-emphasis-color: blue; text-align: center;">Specialization</h1>
+
+<div class="container">
+    <form #formData="ngForm" (ngSubmit)="onSubmit(formData.value)">
+        <div class="row">
+            <div class="col-1">
+                <label>Code</label>
+            </div>
+            <div class="col-5" >
+              <input type="text" name="code" id="code" class="form-control" ngModel >
+            </div>
+            <div class="col-5">
+                <span>***please enter the code</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <label>Name</label>
+            </div>
+            <div class="col-5" >
+              <input type="text" name="name" id="name" class="form-control" ngModel>
+            </div>
+            <div class="col-5">
+                <span>***please enter the name</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <label>Note</label>
+            </div>
+            <div class="col-5" >
+              <input type="text" name="note" id="note" class="form-control" ngModel >
+            </div>
+            <div class="col-5">
+                <span>***please enter the note</span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>

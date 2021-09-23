@@ -11,10 +11,10 @@ export class DocuterComponent{
   
   public docterList:Array<any>=[];
   constructor(private _service:productService) { }
-
+ public dd = new Date();
   ngOnInit() {
     
-    this._service.getProducts().subscribe((posRes)=>{
+    this._service.getAcProducts().subscribe((posRes)=>{
       this.docterList = posRes;
     },(err:HttpErrorResponse)=>{
       console.log(err);
